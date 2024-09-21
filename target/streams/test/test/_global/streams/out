@@ -1,0 +1,18 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ziomicroservices.challenge.repository.InMemoryChallengeAttemptRepositoryTest, zio.test.sbt.ZioSpecFingerprint$@53450f7a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ziomicroservices.challenge.model.UserTest, zio.test.sbt.ZioSpecFingerprint$@53450f7a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ziomicroservices.challenge.service.ChallengeServiceImplTest, zio.test.sbt.ZioSpecFingerprint$@53450f7a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ziomicroservices.challenge.model.ChallengeSpec, zio.test.sbt.ZioSpecFingerprint$@53450f7a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ziomicroservices.challenge.controller.ChallengeControllerTest, zio.test.sbt.ZioSpecFingerprint$@53450f7a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ziomicroservices.challenge.controller.RandomGeneratorControllerTest, zio.test.sbt.ZioSpecFingerprint$@53450f7a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ziomicroservices.challenge.service.RandomGeneratorServiceImplTest, zio.test.sbt.ZioSpecFingerprint$@53450f7a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ziomicroservices.challenge.model.ChallengeAttemptTest, zio.test.sbt.ZioSpecFingerprint$@53450f7a, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0mCompleted tests[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ziomicroservices.challenge.model.ChallengeAttemptTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ziomicroservices.challenge.service.ChallengeServiceImplTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ziomicroservices.challenge.repository.InMemoryChallengeAttemptRepositoryTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ziomicroservices.challenge.service.RandomGeneratorServiceImplTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ziomicroservices.challenge.model.UserTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ziomicroservices.challenge.model.ChallengeSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ziomicroservices.challenge.controller.RandomGeneratorControllerTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ziomicroservices.challenge.controller.ChallengeControllerTest[0m

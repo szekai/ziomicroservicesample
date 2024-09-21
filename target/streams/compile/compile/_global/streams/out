@@ -1,0 +1,15 @@
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E003] Syntax Warning: /Users/szekai/Projects/scala/ziomicroservices/src/main/scala/ziomicroservices/challenge/Main.scala:10:27 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m10 |[0m  [33mdef[0m [36mrun[0m: [35mZIO[0m[[35mEnvironment[0m [33mwith[0m [35mZIOAppArgs[0m [33mwith[0m [35mScope[0m, [35mThrowable[0m, [35mAny[0m] =[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                           ^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[33mwith[0m as a type operator has been deprecated; use & instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThis construct can be rewritten automatically under -rewrite -source 3.4-migration.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E003] Syntax Warning: /Users/szekai/Projects/scala/ziomicroservices/src/main/scala/ziomicroservices/challenge/Main.scala:10:43 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m10 |[0m  [33mdef[0m [36mrun[0m: [35mZIO[0m[[35mEnvironment[0m [33mwith[0m [35mZIOAppArgs[0m [33mwith[0m [35mScope[0m, [35mThrowable[0m, [35mAny[0m] =[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                           ^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[33mwith[0m as a type operator has been deprecated; use & instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mThis construct can be rewritten automatically under -rewrite -source 3.4-migration.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

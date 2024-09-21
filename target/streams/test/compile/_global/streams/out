@@ -1,0 +1,60 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/szekai/Projects/scala/ziomicroservices/src/test/scala/ziomicroservices/challenge/controller/ChallengeControllerTest.scala:33:16 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m    suite([31m"Test Challenge Controller"[0m)([0m
+[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m      test([31m"Get result of a previous attempt"[0m) {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m        [33mval[0m [36mapp[0m = ChallengeController()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m        [33mval[0m [36mreq[0m = Request.get(URL(Path.root ++ Path([31m"challenges/result/1"[0m)))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m18 |[0m        assertZIO(app.runZIO(req).map([36mx[0m => x.body))(equalTo(Response.json(ChallengeAttempt(User([31m"TestUser"[0m), Challenge([31m2[0m, [31m2[0m), [31m4[0m).toJson).body))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m      },[0m
+[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m      test([31m"Controller should return True when validating challenge attempt"[0m) {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m        [33mval[0m [36mapp[0m = ChallengeController()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m22 |[0m        [33mval[0m [36mreq[0m = Request.post([0m
+[0m[[0m[31merror[0m] [0m[0m[31m23 |[0m          URL(Path.root ++ Path([31m"challenges/attempt"[0m)),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m24 |[0m          Body.fromString([31m"""{"user":{"alias":"TestUser"},"challenge":{"valueA":2,"valueB":2},"resultAttempt":4}"""[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m        assertZIO(app.runZIO(req).map([36mx[0m => x.body))(equalTo(Response.json([31m"true"[0m).body))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m      },[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m      test([31m"Controller should return False when validating challenge attempt"[0m) {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m        [33mval[0m [36mapp[0m = ChallengeController()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m29 |[0m        [33mval[0m [36mreq[0m = Request.post([0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m          URL(Path.root ++ Path([31m"challenges/attempt"[0m)),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m          Body.fromString([31m"""{"user":{"alias":"TestUser"},"challenge":{"valueA":2,"valueB":2},"resultAttempt":5}"""[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m32 |[0m        assertZIO(app.runZIO(req).map([36mx[0m => x.body))(equalTo(Response.json([31m"false"[0m).body))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m33 |[0m      }).provide([0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  [31m──── ZLAYER ERROR ────────────────────────────────────────────────────[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m   [1mPlease provide a layer for the following type:[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m     Required by [36mChallengeServiceImpl.layer[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m     [2m1.[0m [1m[35mziomicroservices.challenge.repository.ChallengeAttemptRepository[0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m        [0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  [31m──────────────────────────────────────────────────────────────────────[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m      RandomGeneratorServiceImpl.layer,[0m
+[0m[[0m[31merror[0m] [0m[0m[31m35 |[0m      ChallengeServiceImpl.layer[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m    )[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/szekai/Projects/scala/ziomicroservices/src/test/scala/ziomicroservices/challenge/controller/RandomGeneratorControllerTest.scala:20:16 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m    suite([31m"Test RandomGenerator Controller"[0m)([0m
+[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m      test([31m"Controller should return right entity back when requested new challenge"[0m) {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m        TestRandom.setSeed([31m42L[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m        [33mval[0m [36mapp[0m = ChallengeController[0m
+[0m[[0m[31merror[0m] [0m[0m[31m18 |[0m        [33mval[0m [36mreq[0m = Request.get(URL(Path.root ++ Path([31m"challenges/random"[0m)))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m19 |[0m        assertZIO(app.apply().runZIO(req).map([36mx[0m => x.body))(equalTo(Response.json(Challenge([31m3[0m, [31m8[0m).toJson).body))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m20 |[0m      }).provide([0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  [31m──── ZLAYER ERROR ────────────────────────────────────────────────────[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m   [1mPlease provide a layer for the following type:[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m     Required by [36mChallengeServiceImpl.layer[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m     [2m1.[0m [1m[35mziomicroservices.challenge.repository.ChallengeAttemptRepository[0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m        [0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  [31m──────────────────────────────────────────────────────────────────────[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m      RandomGeneratorServiceImpl.layer,[0m
+[0m[[0m[31merror[0m] [0m[0m[31m22 |[0m      ChallengeServiceImpl.layer[0m
+[0m[[0m[31merror[0m] [0m[0m[31m23 |[0m    )[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
